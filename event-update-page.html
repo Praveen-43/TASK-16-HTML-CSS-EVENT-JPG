@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Update</title>
+    <style>
+        body{
+            display: grid;
+            place-content: center;
+            height: 100vh;
+            text-align: center;
+            font-size: large;
+        }
+        h1{
+            margin-top: 0px;
+    margin-bottom: 0px;
+        }
+        .container{
+            border: 1px solid black;
+            height: 400px;
+            width: 900px;
+            padding: 30px;
+        }
+        .inner-container{
+            border: 1px solid black;
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+    align-items: center;
+        }
+        .image{
+            height: 100px;
+            width: 100px;
+        }
+        label {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        font-size: larger;
+      }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>Event 1</h1>
+        <p>Number of seats available</p>
+        <section class="inner-container">
+            <div class="item1">
+            <img src="./event.svg" class="image">
+        </div>
+        <div class="item2">
+            <label for="name">Name:</label>
+            <input type="text" class="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" class="email" name="email"><br><br>
+
+            <label for="phnno">Phone Number:</label>
+            <input type="text" class="phnno" name="phnno"><br><br>
+
+            <label for="seats">Number of seats:</label>
+            <input type="number" class="seats" name="seats"><br><br>
+
+            <label for="name-of-attendee">Name of Attendee:</label>
+            <input type="text" class="name-of-attendee" name="name-of-attendee"><br><br>
+            <button class="submit">Submit</button>
+            <button class="cancel" > Cancel</button>
+        </div>
+        </section>
+
+    </section>
+    
+</body>
+</html>
